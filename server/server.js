@@ -11,7 +11,6 @@ let app = express();
 let server = http.createServer(app);
 let io = socketIO(server);
 
-
 app.use(express.static(publicPath));
 
 io.on('connection', (socket) => {
